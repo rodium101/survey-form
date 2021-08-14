@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-family: Helvetica;
+        padding-left: 25%;
+        padding-right: 25%;
+        background-color: black;
+      }
+      label {
+        font-size: 20px;
+        display: block;
+        padding-bottom: 12px;
+      }
+      input, textarea, select {
+        display: block;
+        width: 100%;
+        padding-bottom: 25px;
+      }
+
+      form {
+        background-color: coral;
+        padding: 35px 35px 35px 35px;
+      }
+
+      #button-area {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center><h1 id="title">FreeCodeCamp Survey</h1></center>
+    <center><p id="description">
+      Sample Survey for All Coders.
+    </p></center>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="First Name"><br>
+
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Your Email"><br>
+
+      <label id="number-label">Favourite Number:</label>
+      <input type="number" name="number" id="number" min="0" max="11" required placeholder=""><br>
+
+
+      <label id="gender-type-label">Gender:</label>
+      <select id="dropdown" name="guitars">
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label id="additional-comments-label">Additional Comments:</label>
+      <textarea placeholder="Additional Comments"></textarea><br>
+      <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
